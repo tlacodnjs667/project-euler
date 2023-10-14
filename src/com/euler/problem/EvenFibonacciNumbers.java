@@ -8,7 +8,7 @@ public class EvenFibonacciNumbers {
 
 	public static void main(String[] args) {
 
-		System.out.println(evens);
+		System.out.println(evens.stream().reduce(0, (a,b) -> a+b));
 	}
 
 	public static int fibonacci(int a) {
